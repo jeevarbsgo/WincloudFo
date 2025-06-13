@@ -56,7 +56,7 @@ public class testclass {
 
 		Assert.assertTrue(logo.isDisplayed(), "Login was not successful - Wincloud logo not displayed.");
 
-		takeScreenshot("Test_Sucessfull_Login");
+	//	takeScreenshot("Test_Sucessfull_Login");
 
 	}
 
@@ -1408,17 +1408,15 @@ public class testclass {
 	    }
 	}*/
 	
-	private void takeScreenshot(String methodName) throws IOException {
-	    TakesScreenshot ts = (TakesScreenshot) driver;
-	    File srcFile = ts.getScreenshotAs(OutputType.FILE);
-
-	    String filePath = "C:\\Users\\Jeeva\\Pictures\\ScreenShot\\" + methodName + ".png";
-
-	    FileHandler.copy(srcFile, new File(filePath));
-	    System.out.println("Screenshot saved at: " + filePath);
-	 
-	
-	
+//	private void takeScreenshot(String methodName) throws IOException {
+//	    TakesScreenshot ts = (TakesScreenshot) driver;
+//	    File srcFile = ts.getScreenshotAs(OutputType.FILE);
+//
+//	    String filePath = "C:\\Users\\Jeeva\\Pictures\\ScreenShot\\" + methodName + ".png";
+//
+//	    FileHandler.copy(srcFile, new File(filePath));
+//	    System.out.println("Screenshot saved at: " + filePath);
+//	 
+//	
 	    }
 
-}
