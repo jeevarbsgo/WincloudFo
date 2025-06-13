@@ -1406,17 +1406,17 @@ public class testclass {
 	    } catch (IOException e) {
 	        System.out.println("❌ Failed to save screenshot: " + e.getMessage());
 	    }
-	}*/
+	}
 	
-//	private void takeScreenshot(String methodName) throws IOException {
-//	    TakesScreenshot ts = (TakesScreenshot) driver;
-//	    File srcFile = ts.getScreenshotAs(OutputType.FILE);
-//
-//	    String filePath = "C:\\Users\\Jeeva\\Pictures\\ScreenShot\\" + methodName + ".png";
-//
-//	    FileHandler.copy(srcFile, new File(filePath));
-//	    System.out.println("Screenshot saved at: " + filePath);
-//	 
-//	
-	    }
+	private void takeScreenshot(String methodName) throws IOException {
+	    TakesScreenshot ts = (TakesScreenshot) driver;
+	    File srcFile = ts.getScreenshotAs(OutputType.FILE);
+
+	    String filePath = "C:\\Users\\Jeeva\\Pictures\\ScreenShot\\" + methodName + ".png";
+
+	    FileHandler.copy(srcFile, new File(filePath));
+	    System.out.println("Screenshot saved at: " + filePath);
+	 */
+	}
+	    
 
