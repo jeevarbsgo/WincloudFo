@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >
+<suite name="Suite">
+
+    <!-- Listeners go here -->
+    <listeners>
+        <listener class-name="Fo.CustomGraphReporter"/>
+        <listener class-name="Fo.ExcelTestListener"/>
+    </listeners>
+
+    <test name="LoginTests">
+        <classes>
+            <class name="Fo.Login"/>
+        </classes>
+    </test>
+
+</suite>

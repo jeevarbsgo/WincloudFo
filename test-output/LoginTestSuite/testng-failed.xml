@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [LoginTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="LoginTest(failed)">
+    <classes>
+      <class name="Fo.Reservation">
+        <methods>
+          <include name="Test_Sucessfull_Login"/>
+          <include name="setup"/>
+          <include name="Test_Mandatory_GuestType"/>
+          <include name="Test_Advance_Amount"/>
+          <include name="tearDown"/>
+          <include name="Test_Complete_Checkin"/>
+          <include name="Test_Future_Arrival_Date"/>
+          <include name="Test_Mandatory_Segment"/>
+          <include name="Test_CheckinList_Tentative"/>
+          <include name="Test_CheckinList_Confirmed"/>
+        </methods>
+      </class> <!-- Fo.Reservation -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+</suite> <!-- Failed suite [LoginTestSuite] -->

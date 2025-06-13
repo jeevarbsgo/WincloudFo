@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>TestNG Bar Chart Report</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Test Summary</h1>
+    <p>Passed: 25</p>
+    <p>Failed: 2</p>
+    <p>Skipped: 0</p>
+    <canvas id="barChart" width="400" height="200"></canvas>
+    <script>
+        const ctx = document.getElementById('barChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Passed', 'Failed', 'Skipped'],
+                datasets: [{
+                    label: 'Test Results',
+                    data: [25, 2, 0],
+                    backgroundColor: ['green', 'red', 'orange']
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        precision: 0
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

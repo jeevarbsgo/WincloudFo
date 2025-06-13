@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test Suite with Chart Reporter">
+    
+    <!-- Register the custom HTML bar chart reporter -->
+    <listeners>
+        <listener class-name="Fo.ChartReporter"/>
+         <listener class-name="Fo.ExcelTestListener"/>
+    </listeners>
+
+    <!-- Define the tests to run -->
+    <test name="Login Test Cases">
+        <classes>
+            <class name="Fo.Login"/>
+             <class name="Fo.Reservation"/>
+        </classes>
+    </test>
+</suite>
